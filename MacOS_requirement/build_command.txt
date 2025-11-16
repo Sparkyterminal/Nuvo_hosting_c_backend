@@ -1,0 +1,4 @@
+cd /path/to/location_tracking_system
+mkdir build && cd build
+cmake ..
+make
