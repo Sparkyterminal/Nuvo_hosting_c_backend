@@ -50,7 +50,7 @@ void Session::handle_request(http::request<http::string_body>& req) {
     try {
         if (req.method() == http::verb::post && req.target() == "/api/location/update") {
             auto j = json::parse(req.body());
-            std::string id = j["deliveryBoyId"];
+            std::string id = j["Employee"];
             double lat = j["lat"];
             double lng = j["lng"];
 
